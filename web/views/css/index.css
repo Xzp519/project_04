@@ -1,0 +1,258 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    position: relative;
+    min-width: 320px;
+    max-width: 750px;
+    /* flexible 给我们划分了 10 等份 */
+    width: 10rem;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+
+/* 图片底部的缝隙问题 */
+
+img {
+    vertical-align: middle;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+
+/* 如果我们的屏幕超过了 750px  不会让我们页面超过750px */
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px!important;
+    }
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.706667rem;
+    line-height: 1.706667rem;
+    background-color: #446ADF;
+    font-size: 0;
+}
+
+header img {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+header .email {
+    margin-left: .4rem;
+    height: .96rem;
+}
+
+header .headerLogo {
+    height: .96rem;
+}
+
+header .serch {
+    margin-right: .4rem;
+    height: .96rem;
+}
+
+.box {
+    position: absolute;
+    width: 100%;
+    top: 1.706667rem;
+    padding-bottom: 1.546667rem;
+    left: 0;
+    background-color: #F1F1F1;
+}
+
+.banner {
+    height: 4.533333rem;
+}
+
+.banner img {
+    width: 100%;
+    height: 4.533333rem;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.floor1 {
+    margin-top: .426667rem;
+    height: 6.453333rem;
+    background-color: #ffffff;
+    /* background-color: #FFFFFF; */
+}
+
+.floor1 h1 {
+    text-align: center;
+    font-size: .48rem;
+    line-height: .48rem;
+    color: #446ADF;
+}
+
+.floor1 .circle {
+    display: inline-block;
+    vertical-align: middle;
+    height: .133333rem;
+    width: .133333rem;
+    border-radius: 50%;
+    background-color: #446ADF;
+}
+
+.floor1 .category {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    margin-top: .693333rem;
+    /* background-color: blue; */
+}
+
+.floor1 .category .item {
+    flex: 33.3333%;
+    width: 3.36rem;
+    height: 1.866667rem;
+    text-align: center;
+    line-height: 1.866667rem;
+}
+
+.floor1 .category .item img {
+    width: 1.866667rem;
+    height: 1.866667rem;
+    border-radius: 50%;
+}
+
+.floor1 .category .item:nth-child(2n) {
+    width: 3.306667rem;
+}
+
+.floor1 .category .item:nth-child(n+4) {
+    margin-top: .853333rem;
+}
+
+.floor2 {
+    /* overflow: hidden; */
+    margin-top: .426667rem;
+    background-color: #ffffff;
+}
+
+.floor2 h1 {
+    margin-top: .426667rem;
+    margin-bottom: .266667rem;
+    text-align: center;
+    font-size: .48rem;
+    line-height: .48rem;
+    color: #446ADF;
+}
+
+.floor2 .circle {
+    display: inline-block;
+    vertical-align: middle;
+    height: .133333rem;
+    width: .133333rem;
+    border-radius: 50%;
+    background-color: #446ADF;
+}
+
+.floor2 .category {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.floor2 .category .item {
+    flex: 50%;
+    margin-top: .266667rem;
+}
+
+.floor2 .category .item:nth-child(2n+1) {
+    padding-left: .16rem;
+    padding-right: .106667rem;
+}
+
+.floor2 .category .item:nth-child(2n) {
+    padding-left: .106667rem;
+    padding-right: .16rem;
+}
+
+.floor2 .category .item img {
+    width: 100%;
+    height: 2.666667rem;
+}
+
+.floor2 .category .item h2 {
+    margin-top: .026667rem;
+    margin-left: .133333rem;
+    font-size: .426667rem;
+}
+
+.floor2 .category .item h3 {
+    display: flex;
+    justify-content: space-between;
+    margin: .32rem 0rem;
+    font-size: .373333rem;
+}
+
+.floor2 .category .item .studyNumber {
+    color: #D0D0D0;
+}
+
+.floor2 .category .item .price {
+    color: #446ADF;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.546667rem;
+    background-color: #FFFFFF;
+}
+
+footer .home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1.066667rem;
+    cursor: pointer;
+}
+
+footer .category {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 1.066667rem;
+    cursor: pointer;
+}
+
+footer,
+.iconfont {
+    font-size: .266667rem;
+    color: #5bb5f5;
+}
+
+.iconfont {
+    font-size: .8rem;
+}

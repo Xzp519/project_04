@@ -1,0 +1,30 @@
+{
+
+
+    "status": "0",
+    "titile": "微信小程序就业班",
+    "data": [{
+
+            "name": "微信小程序"
+        },
+        {
+
+            "name": "bootstrap"
+        },
+        {
+
+            "name": "node.js"
+        },
+        {
+
+            "name": "node.js"
+        },
+        {
+
+            "name": "angular"
+        }, {
+
+            "name": "react"
+        }
+    ]
+}

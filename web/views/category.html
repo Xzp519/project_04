@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程分类</title>
+    <!-- 导入网站图标 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- 导入normalize.css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- 引入阿里巴巴字体图标 -->
+    <link rel="stylesheet" href="./font/font_1cvwivdttsp/iconfont.css">
+    <!-- 导入category.css -->
+    <link rel="stylesheet" href="./css/category.css">
+</head>
+
+<body>
+
+    <!-- header头部区域模块start -->
+    <header>
+        <img src="./images/logo.png" alt="">
+        <h1>课程分类</h1>
+    </header>
+    <!-- header头部区域模块end -->
+
+
+    <!-- 主题内容box模块 start -->
+    <section class="box">
+        <!-- 左侧选择模块 -->
+        <div class="left">
+            <ul>
+                <li class="qianduan selected" data-category="qd">前端</li>
+                <li class="weixin" data-category="wxxcx">微信小程序</li>
+                <li class="vue" data-category="vue">Vue.js</li>
+                <li class="yidongweb" data-category="ydwebkf">移动web开发</li>
+                <li class="bootstrap" data-category="bootstrap">bootstrap</li>
+                <li class="node" data-category="node">Node.js</li>
+            </ul>
+        </div>
+        <!-- 右侧内容显示区域 -->
+        <div class="right">
+            <h1>就业班</h1>
+            <div class="preview">
+                web前端在线就业班
+            </div>
+
+            <h1 class="tigao">提高课</h1>
+
+            <div class="tabs">
+                <div>
+                    微信小程序
+                </div>
+                <div>
+                    深入探索js
+                </div>
+                <div>
+                    node.js
+                </div>
+                <div>
+                    bootstrap
+                </div>
+                <div>
+                    vue.js
+                </div>
+                <div>
+                    微信小程序
+                </div>
+                <div>
+                    深入探索js
+                </div>
+                <div>
+                    node.js
+                </div>
+                <div>
+                    bootstrap
+                </div>
+                <div>
+                    vue.js
+                </div>
+                <div>
+                    微信小程序
+                </div>
+                <div>
+                    深入探索js
+                </div>
+                <div>
+                    node.js
+                </div>
+                <div>
+                    bootstrap
+                </div>
+                <div>
+                    vue.js
+                </div>
+                <div>
+                    微信小程序
+                </div>
+                <div>
+                    深入探索js
+                </div>
+                <div>
+                    node.js
+                </div>
+                <div>
+                    bootstrap
+                </div>
+                <div>
+                    vue.js
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer底部区域start -->
+    <footer>
+
+        <div class="home">
+            <span class="iconfont icon-shouye"></span> 首页
+        </div>
+        <div class="category"> <span class="iconfont icon-fenlei"></span>分类
+        </div>
+
+    </footer>
+    <!-- footer底部区域end -->
+    <!-- 主题内容box模块 end -->
+
+
+
+
+    <!-- 定义模板 -->
+
+
+    <!-- {
+
+
+        "status":"0",
+        "title":"web前端在线就业班",
+        "data":[{
+    
+            "name":"微信小程序"
+        },
+        {
+    
+            "name":"深入探索js"
+        },
+        {
+    
+            "name":"node.js"
+        }]
+    } -->
+    <script type="text/html" id="tpl-category">
+        <h1>就业班</h1>
+        <div class="preview">
+            {{titile}}
+        </div>
+
+        <h1 class="tigao">提高课</h1>
+        <!-- 小选项卡 -->
+        <div class="tabs">
+            {{each data}}
+            <div>
+                {{$value.name}}
+            </div>
+            {{/each}}
+        </div>
+
+    </script>
+    <!-- 导入flexible.js -->
+    <script src="./lib/js/flexible.js"></script>
+    <!-- 导入jquery -->
+    <script src="./lib/js/jquery.min.js"></script>
+    <!-- 导入template-web.js -->
+    <script src="./lib/js/template-web.js"></script>
+    <!-- 导入index.js -->
+    <script src="./js/category.js"></script>
+</body>
+
+</html>

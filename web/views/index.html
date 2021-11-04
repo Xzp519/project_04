@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <!-- 导入网站图标 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- 导入normalize.css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- 引入阿里巴巴字体图标 -->
+    <link rel="stylesheet" href="./font/font_1cvwivdttsp/iconfont.css">
+    <!-- 导入index.css -->
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+
+
+<body class="clearfix">
+
+    <!-- header头部区域start -->
+    <header>
+        <img src="./images/邮件.png" alt="邮件" class="email">
+        <img src="./images/headerLogo.png" alt="" class="headerLogo">
+        <img src="./images/搜索.png" alt="" class="serch">
+    </header>
+    <!-- header头部区域end -->
+    <!-- 主题内容区域start -->
+    <section class="box">
+        <!-- banner广告区域start -->
+        <section class="banner">
+            <img src="./images/FE.png" alt="">
+        </section>
+        <!-- banner广告区域end -->
+
+
+
+        <!-- contain中间内容区域start -->
+        <section class="contain">
+            <!-- 一楼就业课模块start -->
+            <div class="floor1">
+                <h1> <span class="circle"></span> 就业课 <span class="circle"></span></h1>
+                <div class="category">
+                    <div class="item">
+                        <img src="./images/fe-list.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./images/java.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./images/data.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./images/python.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./images/ui.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="./images/fe-list.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 一楼就业课模块end -->
+
+
+
+            <!-- 二楼微课模块start -->
+            <div class="floor2">
+                <h1> <span class="circle"></span> 微课 <span class="circle"></span></h1>
+                <div class="category">
+                    <div class="item">
+                        <img src="./images/wx.jpg" alt="">
+                        <h2>[前端] 微信小程序</h2>
+                        <h3><span class="studyNumber">20人学习</span> <span class="price">￥199</span></h3>
+                    </div>
+                    <div class="item">
+                        <img src="./images/wx.jpg" alt="">
+                        <h2>[前端] 微信小程序</h2>
+                        <h3><span class="studyNumber">20人学习</span> <span class="price">￥199</span></h3>
+                    </div>
+                    <div class="item">
+                        <img src="./images/wx.jpg" alt="">
+                        <h2>[前端] 微信小程序</h2>
+                        <h3><span class="studyNumber">20人学习</span> <span class="price">￥199</span></h3>
+                    </div>
+                    <div class="item">
+                        <img src="./images/wx.jpg" alt="">
+                        <h2>[前端] 微信小程序</h2>
+                        <h3><span class="studyNumber">20人学习</span> <span class="price">￥199</span></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- 二楼微课模块end -->
+
+        </section>
+        <!-- contain中间内容区域end -->
+    </section>
+    <!-- 主题内容区域end -->
+    <!-- footer底部区域start -->
+    <footer>
+
+        <div class="home">
+            <span class="iconfont icon-shouye"></span> 首页
+        </div>
+        <div class="category"> <span class="iconfont icon-fenlei"></span>分类
+        </div>
+
+    </footer>
+
+
+
+    <!-- 定义模板 -->
+    <script type="text/html" id="tpl-category">
+
+        <h1> <span class="circle"></span> 微课 <span class="circle"></span></h1>
+        <div class="category">
+            {{each data}}
+            <div class="item">
+                <img src="{{$value.img}}" alt="">
+                <h2>{{$value.name}}</h2>
+                <h3><span class="studyNumber">{{$value.count}}人学习</span> <span class="price">￥{{$value.price}}</span></h3>
+            </div>
+            {{/each}}
+
+        </div>
+
+    </script>
+    <!-- footer底部区域end -->
+    <!-- 导入flexible.js -->
+    <script src="./lib/js/flexible.js"></script>
+    <!-- 导入jquery -->
+    <script src="./lib/js/jquery.min.js"></script>
+    <!-- 导入template-web.js -->
+    <script src="./lib/js/template-web.js"></script>
+    <!-- 导入index.js -->
+    <script src="./js/index.js"></script>
+</body>
+
+
+
+
+</html>

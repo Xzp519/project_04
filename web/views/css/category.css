@@ -1,0 +1,205 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+body {
+    margin: 0 auto;
+    position: relative;
+    min-width: 320px;
+    max-width: 750px;
+    /* flexible 给我们划分了 10 等份 */
+    width: 10rem;
+    height: 100%;
+    /* 控制侧边滚动条是否可用 */
+    /* overflow: hidden; */
+}
+
+div {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+/* 图片底部的缝隙问题 */
+
+img {
+    vertical-align: middle;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+
+
+/* 如果我们的屏幕超过了 750px  不会让我们页面超过750px */
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px!important;
+    }
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.76rem;
+    line-height: 1.76rem;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+header img {
+    float: left;
+    position: relative;
+    height: 1.386667rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header h1 {
+    float: left;
+    font-size: .693333rem;
+    margin-left: 1.333333rem;
+    color: #28ABFC;
+}
+
+.box {
+    position: absolute;
+    display: flex;
+    top: 2rem;
+    width: 100%;
+    /* height: 100%; */
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.selected {
+    border-left: 5px solid #5191b7;
+    background-color: #ffffff;
+}
+
+.box .left {
+    flex: 30%;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+.box .left ul li {
+    height: 1.493333rem;
+    line-height: 1.493333rem;
+    font-size: .426667rem;
+    text-align: center;
+    color: #333333;
+}
+
+.box .right {
+    height: 100%;
+    overflow-y: hidden;
+    flex: 70%;
+}
+
+.right h1 {
+    font-size: .48rem;
+    line-height: 1.173333rem;
+    padding-left: .453333rem;
+    font-weight: 400;
+    color: #28ABFC;
+}
+
+.right .tigao {
+    line-height: .533333rem;
+}
+
+.right .preview {
+    margin-left: .453333rem;
+    height: 2.293333rem;
+    background: url(../images/web_fe.png) no-repeat;
+    background-size: cover;
+    border-radius: .133333rem;
+    text-align: center;
+    line-height: 2.293333rem;
+    color: #ffffff;
+    font-size: .48rem;
+}
+
+.right .tabs {
+    margin-left: .32rem;
+}
+
+.right .tabs div {
+    box-sizing: border-box;
+    float: left;
+    margin-left: .266667rem;
+    margin-top: .533333rem;
+    height: .96rem;
+    padding: .266667rem;
+    font-size: .373333rem;
+    color: #c0c0c0;
+    border: 1px solid #cccccc;
+    border-radius: .133333rem;
+}
+
+.right .tabs div:nth-child(2n+1) {
+    clear: left;
+}
+
+
+/* 底部区域css */
+
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.546667rem;
+    background-color: #FFFFFF;
+}
+
+footer .home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1.066667rem;
+    cursor: pointer;
+}
+
+footer .category {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 1.066667rem;
+    cursor: pointer;
+}
+
+footer,
+.iconfont {
+    font-size: .266667rem;
+    color: #5bb5f5;
+}
+
+.iconfont {
+    font-size: .8rem;
+}
